@@ -1,0 +1,23 @@
+{
+  "name": "colearningdhtn33",
+  "version": "1.0.0",
+  "description": "Clase de colearning para el curso de DHFullstack NODE",
+  "main": "app.js",
+  "scripts": {
+    "test": "nodemon app.js",
+    "server": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AMBoulchouk/colearningDHTN33.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AMBoulchouk/colearningDHTN33/issues"
+  },
+  "homepage": "https://github.com/AMBoulchouk/colearningDHTN33#readme",
+  "dependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
