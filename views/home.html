@@ -1,77 +1,141 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Curriculum</title>
-
-
-    <link rel="stylesheet" href="css/global.css">
+    <title>Mi Curriculum Vitae</title>
 
     <!-- Materialize -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
+    <!-- Custom -->
+    <link rel="stylesheet" href="/styles/global.css">
+
+    <link >
     <!-- Font Awesome -->
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
+
 <body>
 
     <div class="header">
         <nav class="nav">
             <ul>
                 <li><a href="#">Inicio</a></li>
-                <li><a href="#">Portfolio</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
             </ul>
         </nav>
 
-        <div class="main-header">
-            <img src="img/profile.jpg" alt="">
-            <h1>Alex M. Boulchouk</h1>
-            <p>Fullstack JS Developer</p>
-            <button>Contacto</button>
+        <div class="inicio-container">
+            <div class="inicio-wrapper">
+                <div class="profile-wrapper">
+                    <img src="./img/profile.jpg" alt="Alex M Boulchouk">
+                </div>
+                <h1>Alex M. Boulchouk</h1>
+                <p>Fullstack JS Developer</p>
+
+                <div class="actions-wrapper">
+                    <button class="myButton">Contacto</button>
+                </div>
+            </div>
         </div>
     </div>
 
-    <div class="red">
-        <a href="">github</a>
-        <a href="">linkedin</a>
-    </div>
-
-    <div class="cajas">
-        <div>
-            <a href="">compartir</a>
-            <h4>Compartir</h4>
-            <p>Aprender y enseñar es parte de mi filosofia de trabajo. Valoro la comunidad y el compartir.</p>
-        </div>
-        <div>
-            <a href="">persona</a>
-            <h4>Comunicacion</h4>
-            <p>Mis trabajos de calidad se respaldan con la cominucacion y la transparecia</p>
-        </div>
-        <div>
-            <a href="">celular</a>
-            <h4>JavaScript</h4>
-            <p>Mi principal lenguaje de programacion.</p>
+    <div class="container redes-container">
+        <div class="redes">
+            <div class="red-wrapper">
+                <a class="btn-floating btn-large waves-effect waves-light red" href="https://github.com/AMBoulchouk"
+                    target="about_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+            </div>
+            <div class="red-wrapper">
+                <a class="btn-floating btn-large waves-effect waves-light red"
+                    href="https://www.linkedin.com/in/amboulchouk/" target="about_blank"><i class="fa fa-linkedin"
+                        aria-hidden="true"></i></i></a>
+            </div>
         </div>
     </div>
 
-    <div class="portfolio">
-
-        <div>
-            <img src="https://d85wutc1n854v.cloudfront.net/live/products/600x375/WB0L7L747.png?v=1.0" alt="">
-            <span>Tesla</span>
-            <a href="">tres puntos</a>
+    <div class="container">
+        <div class="about">
+            <div class="fila">
+                <div class="columna">
+                    <div class="ai">
+                        <i class="material-icons grey-text text-darken-1">share</i>
+                        <p>Compartir</p>
+                        <p class="textoClaro">Aprender y enseñar es parte de mi filosofia de trabajo. Valoro la
+                            comunidad y el compartir.</p>
+                    </div>
+                </div>
+                <div class="columna">
+                    <div class="ai">
+                        <i class="material-icons grey-text text-darken-1">person</i>
+                        <p>Comunicacion</p>
+                        <p class="textoClaro">Mis trabajos de calidad se respaldan con la cominucacion y la
+                            transparecia</p>
+                    </div>
+                </div>
+                <div class="columna">
+                    <div class="ai">
+                        <i class="material-icons grey-text text-darken-1">developer_mode</i>
+                        <p>JavaScript</p>
+                        <p class="textoClaro">Mi principal lenguaje de programacion.</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div>
-            <img src="https://cssauthor.com/wp-content/uploads/2018/01/Arrive-Business-Responsive-Website-Template.jpg" alt="">
-            <span>NatGeo</span>
-            <a href="">tres puntos</a>
-        </div>
-        
     </div>
 
+    <div class="portfolio-container grey lighten-3">
+        <h2 class="center">Portfolio</h2>
+
+        <div class="filaPortfolio">
+            <div class="columna-6">
+                <div class="cardFull">
+                    <div class="cardFull-header">
+                        <img src="https://d85wutc1n854v.cloudfront.net/live/products/600x375/WB0L7L747.png?v=1.0">
+                    </div>
+                    <div class="cardFull-body">
+                        <h3>Tesla <i
+                            class="material-icons right">more_vert</i></h3>
+                        <p><a href="#">This is a link</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="columna-6">
+                <div class="cardFull">
+                    <div class="cardFull-header">
+                        <img src="https://cssauthor.com/wp-content/uploads/2018/01/Arrive-Business-Responsive-Website-Template.jpg">
+                    </div>
+                    <div class="cardFull-body">
+                        <h3>NatGeo <i
+                            class="material-icons right">more_vert</i></h3>
+                        <p><a href="#">This is a link</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="mi-modal">
+        <div class="mi-modal-wrapper">
+            <div class="mi-modal-title">
+                <h3>Contacto</h3>
+            </div>
+            <div class="mi-modal-content">
+                <p>telefono: (3541)660-927</p>
+                <p>email: amboulchouk@outlook.com</p>
+            </div>
+            <div class="mi-modal-actions">
+                <button class="myButton">Cerrar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Codigo JavaScript -->
+    <script src="src/script.js"></script>
 </body>
+
 </html>
